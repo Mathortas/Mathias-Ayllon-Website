@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.google.com/specimen/Montserrat");
 
 * {
     margin: 0;
@@ -8,14 +8,14 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat";
 }
 
 :root {
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
+    --bg-color: rgb(87, 92, 81);
+    --second-bg-color: #a4b17b60;
     --text-color: #ededed;
-    --main-color: #00abf0;
+    --main-color: #c0b985;
 }
 
 hmtl {
@@ -61,7 +61,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #275807;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
@@ -130,7 +130,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #2a3923;
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -139,7 +139,7 @@ section {
     position: relative;
     font-size: 1.7rem;
     font-weight: 700;
-    color: transparent;
+    color: #c8b393;
     -webkit-text-stroke: .7px var(--main-color);
 }
 
@@ -150,7 +150,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #2a3923;
     animation: showRight 1s ease forwards;
     animation-delay: 1.3s;
 }
@@ -168,7 +168,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #c3ca92;
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 }
@@ -188,7 +188,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #c3ca92;
     animation: showRight 1s ease forwards;
     animation-delay: 1.9s;
     z-index: 2;
@@ -201,8 +201,8 @@ section {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #c3ca92;
+    border: 2px solid #ffffff;
     border-radius: 8px;
     font-size: 19px;
     color: #081b29;
@@ -215,16 +215,16 @@ section {
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color: #0b252f;
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: #00abf0;
+    color: #000000;
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #081b29;
+    color: #6d7f8c;
 }
 
 .btn-box a:nth-child(2)::before {
@@ -238,7 +238,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: #081b29;
+    background: #717c83;
     z-index: -1;
     transition: .5s;
 }
@@ -263,7 +263,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #d3d4d5;
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
     z-index: 2;
@@ -309,21 +309,23 @@ section {
 
 .home-imgHover {
     position: absolute;
-    top: 0;
+    top: 110px; /* Ajusta la posición para que quede debajo de la barra de navegación */
     right: 39px;
     width: 700px;
-    height: 100%;
-    background: transparent;
+    height: 93.5%;
+    background: url('ruta/a/tu/imagen.jpg') no-repeat center center; /* Imagen de fondo */
+    background-size: cover; /* Escalar la imagen */
     transition: 3s;
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
+    z-index: 1; /* Asegúrate de que esté detrás de la barra de navegación */
 }
 
 .home-imgHover:hover {
-    background: #081b29;
-    opacity: .8;
-
+    background: #233001; /* Cambia el color al hacer hover */
+    opacity: 0.8; /* Mezclar opacidad */
+    background-blend-mode: darken; /* Mezcla colores */
 }
 
 .home-imgHover::after {
@@ -333,11 +335,12 @@ section {
     right: 0;
     width: 120%;
     height: 100%;
-    background: #081b29;
+    background: #2a3923;
     animation: showRight 1s ease forwards;
     animation-delay: 3s;
-    z-index: 100;
+    z-index: 0; /* Asegura que esté debajo del contenido principal */
 }
+
 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
@@ -674,9 +677,9 @@ span {
 .separator {
     margin: 20px 0;
     padding: 10px;
-    background-color: #4caf50; /* Verde claro */
-    color: white;
-    font-size: 20px;
+    background-color: #bcb094; /* Verde claro */
+    color: #ffffff;
+    font-size: 40px;
     text-align: center;
     border-radius: 5px;
 }
@@ -689,27 +692,47 @@ span {
 .progress {
     margin: 10px 0;
     position: relative;
-    background: #e0e0e0;
+    background: #5f6f52;
     border-radius: 20px;
-    height: 20px;
+    height: 60px;
     width: 100%;
 }
 
 .progress h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 40px;
+    margin-bottom: 50px;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
+}
+.header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    z-index: 10; /* Asegura que el header esté por encima de otros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: transparent; /* Para que el contenido del header sea visible */
+    transition: 0.3s ease-in-out; /* Transición para efectos */
 }
 
-.progress .bar {
-    height: 100%;
-    background: #4caf50; /* Verde */
-    border-radius: 20px;
-    transition: width 0.5s ease-in-out;
+/* Barra detrás del header */
+.header::before {
+    content: ''; /* Inserta una pseudo-elemento vacío */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura del header */
+    background: #748873ac; /* Color de fondo, definido en :root */
+    z-index: -1; /* Envía la barra detrás del contenido del header */
+    opacity: 0.9; /* Hace que la barra sea un poco translúcida */
+    transition: 0.3s ease-in-out; /* Transición para efectos suaves */
 }
 
-.progress .bar span {
-    display: block;
-    height: 100%;
+/* Efecto sticky (opcional) */
+.header.sticky::before {
+    background: var(--bg-color); /* Cambia el fondo si el header es "sticky" */
 }
