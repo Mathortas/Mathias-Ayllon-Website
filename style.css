@@ -736,3 +736,182 @@ span {
 .header.sticky::before {
     background: var(--bg-color); /* Cambia el fondo si el header es "sticky" */
 }
+/* Botón estilizado para enlaces en la sección Compañeros */
+.teammates .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+}
+
+.teammates .btn:hover {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+/* Estilo para la sección Compañeros */
+.teammates {
+    padding: 5rem 9%;
+    background: var(--second-bg-color);
+    text-align: center;
+}
+
+.teammates .heading {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.teammates-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.teammate-card {
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 25rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.teammate-card h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.teammate-card p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.teammate-card .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.teammate-card .btn:hover {
+    background: var(--second-bg-color);
+    color: rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--text-color);
+}
+
+.teammate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* Colores para las secciones */
+.teammates {
+    padding: 5rem 9%;
+    background: var(--second-bg-color); /* Color claro para compañeros */
+    text-align: center;
+}
+
+.skills {
+    padding: 5rem 9%;
+    background: var(--bg-color); /* Color diferente para habilidades */
+}
+
+/* Barras de progreso animadas */
+.skills-box .progress {
+    position: relative;
+    background: #1c340f;
+    border-radius: 2rem;
+    height: 2.5rem;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.skills-box .progress .bar {
+    height: 100%;
+    background: var(--main-color);
+    width: 0; /* Empieza en 0 para animación */
+    border-radius: 2rem;
+    transition: width 1.5s ease-out; /* Animación suave */
+}
+
+/* Inicia la animación al cargar */
+.skills-box .progress[data-value] .bar {
+    width: var(--value); /* El ancho final depende del atributo data-value */
+}
+
+.skills-box .progress h3 {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    font-size: 1.5rem;
+    color: var(--bg-color);
+    width: 100%;
+    text-align: left;
+}
+
+.skills-box .progress h3 span {
+    float: right;
+    color: var(--main-color);
+}
+/* Barras de progreso animadas */
+.skills-box .progress {
+    position: relative;
+    background: #1c340f;
+    border-radius: 2rem;
+    height: 2.5rem;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+/* Texto centrado en las barras */
+.skills-box .progress .bar {
+    height: 100%;
+    background: var(--main-color);
+    width: 0; /* Empieza en 0 para animación */
+    border-radius: 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    color: var(--bg-color); /* Texto contrastante */
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: width 1.5s ease-out; /* Animación suave */
+}
+
+/* Ancho animado desde el atributo data-value */
+.skills-box .progress[data-value] .bar {
+    width: var(--value); /* El ancho final depende del atributo data-value */
+}
+
+/* Encabezado de la habilidad */
+.skills-box .progress h3 {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+}
+
+/* Porcentaje a la derecha */
+.skills-box .progress h3 span {
+    float: center;
+    color: var(--main-color);
+}
