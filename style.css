@@ -307,40 +307,6 @@ section {
     width: 100%;
 }
 
-.home-imgHover {
-    position: absolute;
-    top: 110px; /* Ajusta la posición para que quede debajo de la barra de navegación */
-    right: 39px;
-    width: 700px;
-    height: 93.5%;
-    background: url('ruta/a/tu/imagen.jpg') no-repeat center center; /* Imagen de fondo */
-    background-size: cover; /* Escalar la imagen */
-    transition: 3s;
-    animation: manipActiveHover .1s forwards;
-    animation-delay: 4s;
-    pointer-events: none;
-    z-index: 1; /* Asegúrate de que esté detrás de la barra de navegación */
-}
-
-.home-imgHover:hover {
-    background: #233001; /* Cambia el color al hacer hover */
-    opacity: 0.8; /* Mezclar opacidad */
-    background-blend-mode: darken; /* Mezcla colores */
-}
-
-.home-imgHover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #2a3923;
-    animation: showRight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 0; /* Asegura que esté debajo del contenido principal */
-}
-
 
 /* KEYFRAMES ANIMATION */
 @keyframes showRight {
